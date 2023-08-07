@@ -8,6 +8,10 @@ namespace CSEssensialLesson3
 {
     internal class SportCar:Car
     {
+        public SportCar(string colour, string model) : base(colour, model)
+        {
+        }
+
         public new void CarryPeople()
         {
             Console.WriteLine("Sport-car can carry maximum 2  pasangers ");
@@ -18,7 +22,7 @@ namespace CSEssensialLesson3
             Console.WriteLine("Sport car almost never takes laggage");
         }
 
-        public new void Drive()
+        public override void Drive()
         {
             Console.WriteLine("Weeeeee.... I'm runing on speed more then 180 km/h");
         }

@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSEssensialLesson3
 {
-    internal class Bus:Car,IVehicle,IRecycable
+    internal class Bus:Car, IVehicle, IRecycable
     {
-        
+        public Bus(string colour, string model) : base(colour, model)
+        {
+
+        }
 
         public new void CarryPeople()
         {
@@ -20,7 +23,7 @@ namespace CSEssensialLesson3
             Console.WriteLine("Bus can carry small amount of things. One bag for every pasanger");
         }
 
-        public new void Drive()
+        public override void Drive()
         {
             Console.WriteLine("You drive on the speed 80 km/h");
         }

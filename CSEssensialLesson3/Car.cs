@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace CSEssensialLesson3
 {
-     abstract class Car:IVehicle,IRecycable
+     abstract class Car: IVehicle, IRecycable
     {
-        public string Colour { get; set; }
-        public string Model { get; set; }
+        public string Colour { get; }
+        public string Model { get; }
+        public Car(string colour, string model)
+        {
+            Colour = colour;
+            Model = model;
+        }
 
         public virtual void ShowInfo()
         {
@@ -27,11 +32,8 @@ namespace CSEssensialLesson3
             Console.WriteLine("Can carry some weight of laggage ");
         }
 
-        public virtual void Drive()
-        {
-            Console.WriteLine("Br...br...br");
-        }
-
+        public abstract void Drive();
+       
         public virtual void RecycleToMetal()
         {
             Console.WriteLine("Bzhyk...cutted to metal spare parts");
