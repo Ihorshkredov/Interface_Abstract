@@ -27,7 +27,7 @@
             Console.WriteLine("\nDowncasting\n");
             var lambo2 = (SportCar)lambo;
 
-            lambo2.Drive();
+            lambo2.Drive(); //Now Lambo shows method from sportcar because CAR method drive is overrided in sportcar
 
 
 

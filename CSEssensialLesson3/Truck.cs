@@ -15,12 +15,12 @@ namespace CSEssensialLesson3
             
         } 
 
-        public new void CarryPeople()
+        public override void CarryPeople()
         {
             Console.WriteLine("Truck can carry 2 pasangers ");
         }
 
-        public new void CarryLaggage()
+        public override void CarryLaggage()
         {
             Console.WriteLine("Truck can carry big amount of things.Few tonns. ");
         }

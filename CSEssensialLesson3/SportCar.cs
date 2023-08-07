@@ -12,12 +12,12 @@ namespace CSEssensialLesson3
         {
         }
 
-        public new void CarryPeople()
+        public override void CarryPeople()
         {
             Console.WriteLine("Sport-car can carry maximum 2  pasangers ");
         }
 
-        public new void CarryLaggage()
+        public override void CarryLaggage()
         {
             Console.WriteLine("Sport car almost never takes laggage");
         }
