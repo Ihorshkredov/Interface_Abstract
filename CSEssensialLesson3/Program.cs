@@ -7,30 +7,37 @@
             Console.WriteLine("Abstraction\n");
 
             SportCar ferrari= new SportCar("red", "Ferrari F50");
-            ferrari.ShowInfo();
-            ferrari.CarryPeople();
-            ferrari.Drive();
-            ferrari.RecycleToMetal();
+
 
             Console.WriteLine(new string('-', 20));
             Truck peterbilt = new Truck("red", "Peterbilt 589");  
-            peterbilt.ShowInfo();
-            peterbilt.CarryLaggage();
-            peterbilt.Drive();
-            peterbilt.RecycleToMetal();
 
             Console.WriteLine(new string('-',40));
 
-            Car lambo = new SportCar("red", "Lamborgini Marcielago");
-            lambo.ShowInfo();
-            lambo.Drive();
-            Console.WriteLine("\nDowncasting\n");
-            var lambo2 = (SportCar)lambo;
+            SportCar lambo = new SportCar("red", "Lamborgini Marcielago");
+           
 
-            lambo2.Drive(); //Now Lambo shows method from sportcar because CAR method drive is overrided in sportcar
+            SportCar ford = new SportCar("blue", "Ford Mustang GT");
 
+            SportCar chevrolet = new SportCar(model:"Shevy Camaro",colour:"yellow");
 
 
+
+
+
+            CarCollection myCollection = new CarCollection();
+
+            myCollection[0] = ferrari;
+            myCollection[1] = lambo;
+            myCollection[2] = ford;
+            myCollection[3] = chevrolet;
+
+            for (int i = 0; i < 4; i++)
+            {
+                myCollection[i].ShowInfo();
+                Console.WriteLine(new string ('-',40));
+
+            }
 
             Console.ReadLine(); 
 

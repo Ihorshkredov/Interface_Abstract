@@ -16,6 +16,7 @@ namespace CSEssensialLesson3
             Model = model;
         }
 
+
         public virtual void ShowInfo()
         {
             Console.WriteLine($"This car's model:{Model}, colour - {Colour}");
@@ -23,8 +24,7 @@ namespace CSEssensialLesson3
 
         public virtual void CarryPeople ()
         {
-            Console.WriteLine("Can cary some quantity of people ");
-            
+            Console.WriteLine("Can cary some quantity of people ");    
         }
 
         public virtual void CarryLaggage()
@@ -37,7 +37,6 @@ namespace CSEssensialLesson3
         public virtual void RecycleToMetal()
         {
             Console.WriteLine("Bzhyk...cutted to metal spare parts");
-
         }
 
     }

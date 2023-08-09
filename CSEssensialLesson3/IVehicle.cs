@@ -9,8 +9,6 @@ namespace CSEssensialLesson3
     internal interface IVehicle
     {
         void CarryPeople();
-        
-            
-  
+
     }
 }
